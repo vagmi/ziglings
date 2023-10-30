@@ -35,10 +35,15 @@ pub fn main() void {
         .radius = @as(u32, 12),
     });
 }
+const Circle = struct {
+    center_x: u32,
+    center_y: u32,
+    radius: u32,
+};
 
 // Please complete this function which prints an anonymous struct
 // representing a circle.
-fn printCircle(???) void {
+fn printCircle(circle: Circle) void {
     print("x:{} y:{} radius:{}\n", .{
         circle.center_x,
         circle.center_y,
